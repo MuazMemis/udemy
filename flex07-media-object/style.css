@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.media {
+  display: flex;
+  align-items: start;
+  background-color: antiquewhite;
+  padding: 16px;
+  max-width: 500px;
+  margin: 30px;
+  border-radius: 4px;
+}
+
+.media-object {
+  width: 100px;
+  margin-right: 16px;
+}
+
+.media-heading {
+  margin-bottom: 8px;
+}
+
+.img-right {
+  order: 1;
+}
+
+.media-inner {
+  margin-left: 0;
+  margin-right: 0;
+}
