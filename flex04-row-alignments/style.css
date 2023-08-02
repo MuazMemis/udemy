@@ -6,8 +6,16 @@
 .container {
   background-color: #f2f2f2;
   padding: 15px;
+  height: 1000px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: stretch;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
 }
 
 .item {
@@ -16,33 +24,8 @@
   margin: 30px;
   color: #fff;
   font-size: 25px;
-
-  flex-grow: 1;
-  flex: 1; /* flex-grow: 1 ile aynı işi yapar. */
 }
 
-.i1 {
-  align-self: stretch;
-  order: 6;
-  flex-grow: 2; /* parent a flex verilmezse diğer elemanlardan kalan yeri olduğu gibi kaplar. Ne değer verildiğinin önemi yok. */
-}
-
-.i2 {
-  height: 200px;
-  order: 5;
-  /* flex-grow: 4; */
-  /* flex-basis: 15%; /* flex in %15 ini kaplar. */
-  /* flex-basis: 200px; /* container a aldırış etmeden 200px yer kaplar*/
-  /* flex-shrink: 0; /* küçüldüğünde küçülmesin.*/
-  flex: 0 1 200px; /* flex-grow: 0; flex-shrink: 1; flex-basis: 200px; ile aynı işi yapar. */
-}
-
-.i3 {
-  align-self: flex-start;
-  order: -2; /* sayısal olarak soldan sağa küçükten büyüğe sıralar.*/
-}
-
-.i4 {
-  align-self: end;
-  order: -1;
+.i8 {
+  flex: 1;
 }
