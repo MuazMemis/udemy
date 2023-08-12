@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borders</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      #showcase {
+        background-color: #35155d;
+        color: wheat;
+        padding: 30px;
+      }
+
+      h1 {
+        background-color: darkcyan;
+        /* border: 5px solid white; */
+        border-left: 5px solid white;
+        /* border-top: 5px solid white; */
+        /* border-width: 5px;
+        border-style: solid;
+        border-color: white; */
+        /* border-top-width: 5px;
+        border-left-style: solid;
+        border-bottom-color: white; */
+      }
+
+      #how-it-works {
+        background-color: darkcyan;
+        color: wheat;
+      }
+
+      nav {
+        background-color: aqua;
+        padding: 20px;
+        border-bottom: 5px solid goldenrod;
+      }
+
+      a {
+        padding: 10px;
+        /* margin ve padding yatayda verilir. dikeyde etki etmez */
+        /* padding-left: 15px; */
+        border: 3px solid red;
+        border-radius: 8px;
+        border-radius: 5px 10px 15px 20px; /* top saat yönü */
+        border-radius: 5px 10px; /* dikey-yatay saat yönü */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Movies</a>
+      <a href="">Contact</a>
+    </nav>
+    <main>
+      <section id="showcase">
+        <h1>Welcome To MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>
