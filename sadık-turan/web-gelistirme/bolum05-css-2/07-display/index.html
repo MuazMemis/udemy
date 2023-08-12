@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        height: 60px;
+        width: 60px;
+        display: inline;
+        display: inline-block;
+        text-align: center;
+      }
+
+      #container {
+        width: 500px;
+      }
+
+      #first {
+        background-color: red;
+        width: 30%;
+      }
+
+      #second {
+        background-color: green;
+        width: 40%;
+      }
+
+      #third {
+        background-color: blue;
+        width: 20%;
+      }
+
+      a {
+        /* genişlik ve yükseklik değişmez */
+        width: 100px;
+        height: 100px;
+        padding: 20px; /* yatayda etki eder */
+        display: block; /* genişlik ve yükseklik etki eder */
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box" id="first">first</div>
+      <div class="box" id="second">second</div>
+      <div class="box" id="third">third</div>
+    </div>
+
+    <div style="margin-top: 20px">
+      <a href="">Home</a>
+      <a href="">Movies</a>
+      <a href="">Contact</a>
+    </div>
+  </body>
+</html>
