@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css öncelikleri</title>
+
+    <!-- 
+    öncelik sırası
+    inline css
+    Id selector
+    class selector
+    tag selector
+    browser default
+-->
+
+    <style>
+      h1 {
+        color: red;
+      }
+      h1 {
+        color: blue;
+        font-size: 23px;
+      }
+
+      #title {
+        border-bottom: 3px solid green;
+        color: aqua;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      h2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="title" class="text-red f24" style="color: blueviolet">
+          Welcome To MovieApp
+        </h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ut.
+        </p>
+      </section>
+      <section>
+        <h2 id="subtitle" class="text-red f16">Welcome To MovieApp 2</h2>
+      </section>
+    </main>
+  </body>
+</html>
