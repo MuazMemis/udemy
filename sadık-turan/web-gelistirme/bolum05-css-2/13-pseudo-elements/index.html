@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Elements</title>
+    <style>
+      p::first-letter {
+        color: aqua;
+        font-size: 5rem;
+      }
+
+      p::first-line {
+        color: red;
+        font-size: 2rem;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+
+      p.about::first-line {
+        color: green;
+        font-size: 2rem;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+
+      ::selection {
+        background-color: yellow;
+        color: white;
+      }
+
+      p::before {
+        content: "Before ->";
+      }
+
+      p::after {
+        content: " After!! \261D";
+        font-weight: bold;
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo elements -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit debitis
+      laboriosam dolore expedita quisquam, molestiae est consequuntur nobis
+      error rem veniam reiciendis perferendis delectus cupiditate, nulla sequi
+      modi nam quae.
+    </p>
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed,
+      repellat cum ea ullam vero quisquam culpa quaerat ipsa maxime assumenda
+      ipsam libero consequuntur delectus, dolor magni hic? Nesciunt, architecto!
+    </p>
+  </body>
+</html>
