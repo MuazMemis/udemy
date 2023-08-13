@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Buttons</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      #showcase {
+        /* background-image: url(home-bg.jpeg); */
+        background: url(home-bg.jpeg);
+        background-position: center;
+        background-position: bottom right;
+        background-position-x: right;
+        background-position-y: bottom;
+        color: darkgoldenrod;
+        padding: 10px;
+        height: 500px;
+      }
+
+      #how-it-works {
+        background-color: darkcyan;
+        color: wheat;
+        padding: 10px;
+      }
+
+      .main-header {
+        background-color: darkolivegreen;
+        color: wheat;
+        padding: 8px 16px;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 100px);
+        text-align: right;
+      }
+
+      .main-header__logo {
+        color: white;
+        font-weight: bold;
+        font-size: 21px;
+        text-decoration: none;
+      }
+
+      .main-nav__items {
+        list-style: none;
+        margin: 0;
+      }
+
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 8px;
+      }
+
+      .main-nav__item::before {
+        content: "\2022";
+      }
+
+      .main-nav__item:hover,
+      .main-nav__item a:hover {
+        color: #35155d;
+      }
+
+      .main-nav__item:active,
+      .main-nav__item a:active {
+        color: white;
+      }
+
+      .main-nav__item a {
+        display: inline-block;
+        margin: 0 8px;
+        text-decoration: none;
+        color: antiquewhite;
+      }
+
+      .main-nav__item--login a {
+        color: white;
+        background-color: #35155d;
+        border-radius: 5px;
+        padding: 5px 15px;
+        border: 2px solid white;
+      }
+
+      .main-nav__item--login::before {
+        content: none;
+      }
+
+      .main-nav__item--login a:hover {
+        background-color: darkorchid;
+        color: burlywood;
+        border: 2px solid burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Filmler</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Diziler</a>
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome To MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>
