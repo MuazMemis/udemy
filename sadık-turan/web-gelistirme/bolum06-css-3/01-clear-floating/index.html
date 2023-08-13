@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Floating</title>
+    <style>
+      .container {
+        background-color: aquamarine;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        text-align: center;
+        float: right;
+      }
+
+      #box-3 {
+        float: left;
+        background-color: blue;
+      }
+
+      /* 2. yöntem */
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* 3. yöntem */
+      .clearfix {
+        clear: both;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div id="box-3" class="box">box 3</div>
+      <!-- 1. yöntem -->
+      <!-- <div style="clear: both"></div> -->
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque
+      culpa voluptatibus nam veritatis neque, eligendi facilis temporibus rerum
+      ipsum accusantium dignissimos est magni porro, eveniet praesentium enim
+      nihil quasi.
+    </p>
+  </body>
+</html>
