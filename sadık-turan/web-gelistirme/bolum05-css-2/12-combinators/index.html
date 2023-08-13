@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      /* 1. Descendant Combinator  */
+      /* div p {
+        background-color: red;
+      } */
+
+      /* 2. Child Combinator*/
+      /* div > p {
+        background-color: red;
+      } */
+
+      /* 3. Adjacent Sibling Combinator */
+      /* div den sonraki p elementi */
+      /* div + p {
+        background-color: red;
+      } */
+
+      /* 4. General Sibling Combinator */
+      /* div den sonraki tüm p elementleri */
+      div ~ p {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Combinators -->
+    <!-- 1. Descendant Combinator -->
+    <!-- 2. Child Combinator -->
+    <p>1. paragraf</p>
+    <div>
+      <p>2. paragraf</p>
+      <p>3. paragraf</p>
+      <section>
+        <p>4. paragraf</p>
+      </section>
+    </div>
+    <p>5. paragraf</p>
+    <p>6. paragraf</p>
+
+    <!-- 3. Adjacent Sibling Combinator -->
+    <!-- 4. General Sibling Combinator -->
+  </body>
+</html>
