@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Classes</title>
+    <style>
+      a {
+        border: 1px solid gray;
+        padding: 5px 8px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        width: 60px;
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: white;
+        background-color: yellow;
+      }
+
+      a:active {
+        color: white;
+        background-color: violet;
+      }
+
+      div:hover p {
+        display: block;
+      }
+
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo classes -->
+    <a href="../12-combinators/index.html">Home</a>
+    <a href="../01-box-model/index.html">Products</a>
+    <a href="../02-margin/index.html">About</a>
+    <br /><br />
+    <div>
+      Click here!
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa totam
+        assumenda consequuntur officia dolores alias iure vero at perspiciatis
+        temporibus, reiciendis, fugiat inventore? Illum aut error quo tempore a
+        odit?
+      </p>
+    </div>
+
+    <!-- Pseudo elements -->
+  </body>
+</html>
