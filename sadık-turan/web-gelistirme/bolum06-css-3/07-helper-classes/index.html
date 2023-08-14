@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama 2 Plans</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="buttons.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      #showcase {
+        background: url(../../bolum05-css-2/17-background-image/home-bg.jpeg);
+        background-position: center;
+        background-size: cover;
+        color: darkgoldenrod;
+        padding: 10px;
+        height: 500px;
+      }
+
+      .main-header {
+        background-color: darkolivegreen;
+        color: wheat;
+        padding: 8px 16px;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 110px);
+        text-align: right;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .main-header__logo {
+        color: white;
+        font-weight: bold;
+        font-size: 21px;
+        text-decoration: none;
+      }
+
+      .main-nav__items {
+        list-style: none;
+        margin: 0;
+      }
+
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 8px;
+      }
+
+      .main-nav__item::before {
+        content: "\2022";
+      }
+
+      .main-nav__item:hover,
+      .main-nav__item a:hover {
+        color: #35155d;
+      }
+
+      .main-nav__item:active,
+      .main-nav__item a:active {
+        color: white;
+      }
+
+      .main-nav__item a {
+        display: inline-block;
+        margin: 0 8px;
+        text-decoration: none;
+        color: antiquewhite;
+      }
+
+      .main-nav__item--login a {
+      }
+
+      .main-nav__item--login::before {
+        content: none;
+      }
+
+      .main-nav__item--login a:hover {
+      }
+
+      #how-it-works {
+        padding: 10px;
+      }
+
+      #how-it-works h2 {
+        color: gray;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      #how-it-works p {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+
+      .col-3 {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+
+      .col-2 {
+        display: inline-block;
+        width: calc(50% - 2px);
+        height: 350px;
+        background-color: brown;
+      }
+
+      .icon-box {
+        text-align: center;
+      }
+
+      .icon-box h3 {
+        color: cadetblue;
+        content: "\1F4FA  ";
+        font-size: 26px;
+      }
+
+      .icon-box h3::before {
+        content: "\1F4FA  ";
+      }
+
+      .icon-box i {
+        color: violet;
+      }
+
+      .features__left {
+        background: url(../../bolum05-css-2/22-uygulama-3-features/features.jpeg);
+        background-size: cover;
+      }
+
+      .features__right {
+        background-color: antiquewhite;
+        vertical-align: top;
+        padding: 40px;
+      }
+
+      .features h3 {
+        color: #35155d;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .features p {
+        color: gray;
+        font-size: 20px;
+      }
+
+      .features a {
+      }
+
+      .features a:hover {
+      }
+
+      .section-title {
+        text-align: center;
+      }
+
+      .plan {
+        text-align: center;
+        padding: 5px;
+        float: left;
+        width: 33%;
+      }
+
+      .inner-plan {
+        background: #edf5f7;
+        padding: 25px 10px;
+        border-radius: 5px;
+      }
+
+      .recommended_plan {
+        color: white;
+        background-color: darkslateblue !important;
+      }
+
+      .plan__badge {
+        background-color: white;
+        color: violet;
+        padding: 8px;
+        border: 5px;
+      }
+
+      .plan__features {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .plan__features li {
+        margin: 6px 0;
+        padding: 0;
+      }
+
+      .clearfix {
+        clear: both;
+        overflow: auto;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Filmler</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Diziler</a>
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a class="btn btn-secondary" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome To MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <div class="row">
+          <h2>How it works?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+            rerum illum modi, assumenda voluptate sequi.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              at molestiae, dolorum corporis nulla officiis?
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-brands fa-buffer fa-3x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              at molestiae, dolorum corporis nulla officiis?
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-regular fa-face-smile fa-3x"></i>
+            <h3>Enjoy Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+              at molestiae, dolorum corporis nulla officiis?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>Watch all Movies & TV Shows once they get released!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              doloribus temporibus quod at sed dignissimos adipisci et,
+              voluptates architecto obcaecati?
+            </p>
+            <a class="btn btn-primary" href="#">View Features</a>
+          </div>
+        </div>
+      </section>
+      <section id="plans">
+        <div class="row">
+          <h2 class="section-title">Become a Premium Member</h2>
+          <div class="container clearfix">
+            <div class="plan">
+              <div class="inner-plan">
+                <h2>Free</h2>
+                <h3>0/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor amet</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum dolor sit .</li>
+                </ul>
+                <div>
+                  <button class="btn btn-outline-secondary">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan">
+              <div class="inner-plan recommended_plan">
+                <h2 class="plan__badge">Recommended</h2>
+                <h2>Basic</h2>
+                <h3>$9.99/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor amet</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum dolor sit .</li>
+                </ul>
+                <div>
+                  <button class="btn btn-outline-secondary">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan">
+              <div class="inner-plan">
+                <h2>Free</h2>
+                <h3>0/month</h3>
+                <ul class="plan__features">
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor amet</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum dolor sit .</li>
+                </ul>
+                <div>
+                  <button class="btn btn-outline-secondary">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
