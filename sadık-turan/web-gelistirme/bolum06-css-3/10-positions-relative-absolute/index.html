@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        padding: 10px;
+        border: 5px solid #6d5b95;
+        margin-bottom: 10px;
+      }
+
+      #container {
+        width: 500px;
+        margin: 20px auto;
+        position: relative;
+      }
+      .navbar {
+        background-color: aqua;
+      }
+      .content {
+        background-color: violet;
+        /* position: absolute; */
+      }
+      .footer {
+        background-color: coral;
+        /* width: 100%; */
+        /* var olduğu yere göre kendini konumlandırır */
+        /* position: relative; */
+        /* body e göre kendini konumlandırır */
+        /* top: 50px;
+        left: 20px; */
+        position: absolute;
+        /* top: 0; */
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box navbar">navbar</div>
+      <div class="box content">content</div>
+      <div class="box footer">footer</div>
+    </div>
+  </body>
+</html>
