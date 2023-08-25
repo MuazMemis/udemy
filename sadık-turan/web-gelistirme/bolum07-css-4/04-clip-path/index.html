@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-clip-path</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #header {
+        background-image: url("../00-background/bg.jpg");
+        height: 100vh;
+        position: relative;
+        clip-path: polygon(0 0, 100% 0%, 100% 64%, 0% 100%);
+      }
+
+      #header h1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+      }
+
+      .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Background Text</h1>
+      <img class="logo" src="../01-opacity-gradients/logo.png" alt="" />
+    </div>
+  </body>
+</html>
