@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10-attribute-selector</title>
+    <style>
+      /* Attribute Selector */
+
+      /* target özelliği olan tüm a etiketleri */
+      a[target] {
+        color: red;
+      }
+
+      /* target özelliği _blank ise */
+      a[target="_blank"] {
+        color: green;
+      }
+
+      /* [class] {
+        background-color: aqua;
+      }
+
+      [class="active"] {
+        background-color: aqua;
+      } */
+
+      /* a[class="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '*' selector */
+      /* class içinde active geçenleri seçer */
+      /* [class*="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '~' selector */
+      /* sadece active olanları seçer */
+      /* [class~="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '|' selector */
+      /* active ile başlayanları seçer. birden fazla class olursa seçebilmesi için active-span olması lazım */
+      /* [class|="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '^' selector */
+      /* active ile başlıyorsa */
+      /* [class^="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '$' selector */
+      /* active class ını sonda arar */
+      [class$="active"] {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="active">span</span>
+    <span class="active-span">span</span>
+    <span class="active span">span</span>
+    <nav>
+      <a href="" target="_blank">home</a>
+      <a href="" class="active">about</a>
+      <a href="" class="link">contact</a>
+    </nav>
+  </body>
+</html>
