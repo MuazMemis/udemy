@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-position-size</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #header {
+        background-image: url("../00-background/bg.jpg");
+        background-position: 100px 100px;
+        background-position: bottom;
+        background-position: bottom right;
+        background-position: 10% 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-size: 800px 600px;
+        background-size: 800px 600px, cover;
+        background-size: contain;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+      }
+
+      #header h1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+      }
+
+      .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Background Text</h1>
+      <img class="logo" src="../01-opacity-gradients/logo.png" alt="" />
+    </div>
+  </body>
+</html>
