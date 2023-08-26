@@ -1,16 +1,23 @@
 .signup-page {
-  padding: 50px 0;
+  padding: 6rem 0;
 }
 
 .signup-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
   color: #2e4c6d;
 }
 
 .signup-form {
-  width: 500px;
+  width: 100%;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .signup-form {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 .signup-form label,
@@ -18,21 +25,21 @@
 .signup-form select {
   display: block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .signup-form input[type="checkbox"],
 .signup-form input[type="checkbox"] + label {
   display: inline-block;
   width: auto;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .signup-form input:not([type="checkbox"]),
 .signup-form select {
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
 }
 
 .signup-form input:not([type="checkbox"]):focus,
@@ -40,14 +47,14 @@
   outline: none;
   background-color: darkcyan;
   color: #fff;
-  border: 1px solid #2e4c6d;
+  border: 0.1rem solid #2e4c6d;
 }
 
 .signup-form input[type="checkbox"] {
   appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #2e4c6d;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #2e4c6d;
   vertical-align: bottom;
   border-radius: 50%;
 }
@@ -62,6 +69,6 @@
 
 .signup-form button[type="submit"] {
   display: block;
-  margin-top: 15px;
+  margin-top: 1.5rem;
   width: 100%;
 }

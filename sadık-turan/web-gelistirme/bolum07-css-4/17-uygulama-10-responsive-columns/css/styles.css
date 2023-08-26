@@ -8,7 +8,7 @@ html {
 }
 
 main {
-  margin-top: 4rem;
+  min-height: calc(100vh - 138px);
 }
 
 #showcase {
@@ -206,9 +206,11 @@ main {
   padding: 0;
 }
 
-.plan--featured {
-  position: relative;
-  top: -2rem;
+@media (min-width: 768px) {
+  .plan--featured {
+    position: relative;
+    top: -2rem;
+  }
 }
 
 .plan__features li {
@@ -274,10 +276,6 @@ main {
 footer {
   background-color: #2e4c6d;
   padding: 3rem;
-  margin-top: 3rem;
-
-  position: relative;
-  bottom: -20rem;
 }
 
 footer ul {

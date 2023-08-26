@@ -13,12 +13,13 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .row {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .row::after {
@@ -40,6 +41,18 @@ body {
 .col-4 {
   float: left;
   width: 25%;
+}
+
+@media (max-width: 768px) {
+  /* .col-2,
+  .col-3,
+  .col-4 {
+    width: 100%;
+  } */
+
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
 .clearfix::after {
