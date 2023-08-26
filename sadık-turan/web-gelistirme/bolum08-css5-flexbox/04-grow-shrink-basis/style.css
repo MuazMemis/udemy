@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #034f84;
+  height: 500px;
+
+  display: flex;
+}
+
+.item {
+  background-color: #f7b733;
+  padding: 30px;
+  margin: 20px;
+  color: #fff;
+  font-size: 25px;
+
+  flex-grow: 0; /* default value */
+  /* flex-grow: 1;  */
+  flex: 0 0 200px; /* flex-grow: 0; flex-shrink: 0; flex-basis: auto; */
+}
+
+.item-1 {
+  order: -1;
+  flex-grow: 3;
+  flex: 25%;
+}
+
+.item-2 {
+  flex-grow: 8;
+  flex: 25%;
+  order: 6;
+}
+
+.item-3 {
+  flex-basis: 200px;
+  flex-shrink: 0; /* hiçbir zaman küçülmesin */
+  flex: 20%;
+  order: 2;
+}
+
+.item-4 {
+  flex-grow: 3;
+  flex: 30%;
+  order: 4;
+}
