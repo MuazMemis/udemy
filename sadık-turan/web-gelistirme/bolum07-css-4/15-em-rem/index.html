@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15-em-rem</title>
+    <style>
+      /* .box-1 {
+        font-size: 20px;
+      }
+      .box-1 p {
+        font-size: 1.5em;
+        padding: 1em;
+      } */
+
+      html {
+        /* font-size: 10px; */
+        font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+      }
+
+      /*
+      .box-1 h2 {
+        font-size: 3rem;
+      }
+
+      .box-1 p {
+        font-size: 2rem;
+      } */
+
+      body {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (min-width: 576px) {
+        html {
+          font-size: 12px;
+        }
+
+        .box-1 h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-1">
+      <h2>Lorem, ipsum.</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, est
+        vel sunt expedita nihil, dolor voluptates nobis aperiam veniam dolores
+        officiis asperiores, maxime laboriosam repellendus magnam omnis
+        perferendis illum! Labore.
+      </p>
+    </div>
+    <div class="box-2">
+      <h3>Lorem, ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, est
+        vel sunt expedita nihil, dolor voluptates nobis aperiam veniam dolores
+        officiis asperiores, maxime laboriosam repellendus magnam omnis
+        perferendis illum! Labore.
+      </p>
+    </div>
+  </body>
+</html>
