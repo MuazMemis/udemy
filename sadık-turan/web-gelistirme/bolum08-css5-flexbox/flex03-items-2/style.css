@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #034f84;
+  height: 500px;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: start;
+  align-items: end;
+}
+
+.item {
+  background-color: #f7b733;
+  padding: 30px;
+  margin: 20px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.item-1 {
+  align-self: flex-start;
+}
+
+.item-2 {
+  align-self: center;
+}
+
+.item-3 {
+  align-self: stretch;
+}
