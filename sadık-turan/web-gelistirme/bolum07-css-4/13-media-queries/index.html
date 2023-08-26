@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13-media-queries</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+
+      h1 {
+        display: none;
+        color: #fff;
+      }
+
+      /* xlarge desktop */
+      @media screen and (min-width: 1900px) and (max-width: 1899px) {
+        body {
+          background-color: aquamarine;
+        }
+
+        #xlarge {
+          display: block;
+        }
+      }
+
+      /* large desktop */
+      @media screen and (min-width: 1200px) {
+        body {
+          background-color: bisque;
+        }
+
+        #large {
+          display: block;
+        }
+      }
+
+      /* desktop */
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        body {
+          background-color: blue;
+        }
+
+        #desktop {
+          display: block;
+        }
+      }
+
+      /* tablet */
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        body {
+          background-color: tomato;
+        }
+
+        #tablet {
+          display: block;
+        }
+      }
+
+      /* landscape */
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        body {
+          background-color: darkcyan;
+        }
+
+        #landscape {
+          display: block;
+        }
+      }
+
+      /* mobile */
+      @media screen and (max-width: 575px) {
+        body {
+          background-color: darkgoldenrod;
+        }
+
+        #phone {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="phone">phone</h1>
+    <h1 id="landscape">landscape</h1>
+    <h1 id="tablet">tablet</h1>
+    <h1 id="desktop">desktop</h1>
+    <h1 id="large">large</h1>
+    <h1 id="xlarge">xlarge</h1>
+  </body>
+</html>
