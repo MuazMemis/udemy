@@ -141,9 +141,23 @@ img {
 }
 
 .icons i {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+/* about */
+#about {
+  color: var(--white);
+}
+
+#about h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#about p {
+  margin: 2rem 0;
 }
