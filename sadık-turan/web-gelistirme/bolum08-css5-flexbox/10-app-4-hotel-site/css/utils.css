@@ -165,6 +165,14 @@
   flex: 1;
 }
 
+.flex-columns.article .column:nth-child(odd) {
+  flex: 3;
+}
+
+.flex-columns.article .column:nth-child(even) {
+  flex: 7;
+}
+
 .flex-columns .column .column-1,
 .flex-columns .column .column-2 {
   height: 100%;
@@ -226,7 +234,7 @@
   }
 
   .flex-columns .column {
-    flex: 100%;
+    flex: 100% !important;
   }
 
   .flex-grid .column {
