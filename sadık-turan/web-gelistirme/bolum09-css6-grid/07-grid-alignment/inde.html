@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-grid-alignment</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        gap: 10px;
+        background-color: darkslategray;
+        height: 600px;
+
+        justify-items: stretch; /* default */
+        /* justify-items: center;
+        justify-items: start;
+        justify-items: end; */
+
+        align-items: stretch; /* default */
+        /* align-items: center; */
+        /* align-items: start; */
+        /* align-items: end; */
+
+        grid-template-columns: repeat(3, 20%);
+        grid-template-rows: repeat(3, 20%);
+        
+        justify-content: start;
+        justify-content: center;
+        /* justify-content: end; */
+
+        align-content: start;
+        align-content: center;
+        /* align-content: end; */
+      }
+
+      .item:first-child{
+        align-self: center;
+        /* justify-self: center; */
+      }
+
+      .item {
+        background-color: darkcyan;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">box 1</div>
+      <div class="item">box 2</div>
+      <div class="item">box 3</div>
+      <div class="item">box 4</div>
+      <div class="item">box 5</div>
+      <div class="item">box 6</div>
+    </div>
+  </body>
+</html>
