@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>02-modals</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Open dialog
+      </button>
+      <div id="myModal" class="modal" data-bs-backdrop="static">
+        <!-- responsive=> modal-l, modal-fullscreen-sm-down -->
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Lorem, ipsum.</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+              debitis maxime quia distinctio repudiandae doloribus quasi,
+              asperiores temporibus sequi sint? Nisi, nulla fugiat. A aspernatur
+              saepe maiores impedit reiciendis odit!
+              <div style="height: 900px"></div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Kapat
+              </button>
+              <button type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
