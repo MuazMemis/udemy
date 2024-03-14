@@ -1,0 +1,24 @@
+.top-bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #212529;
+  border-color: #dee2e6;
+}
+
+.btn-light:hover {
+  color: $primary;
+  border-color: #c1c9d0;
+}
+
+.btn-light:hover i {
+  color: $primary;
+  border-color: #c1c9d0;
+}
+
+.btn-light i {
+  color: #9da1a7;
+}
